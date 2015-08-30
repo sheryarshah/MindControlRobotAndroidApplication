@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blink Level:"
+                    android:id="@+id/BlinkLevelLabel"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:textSize="10pt"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BlinkLevelValue"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:textSize="10pt"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/BlinkLevelProgressBar"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:minHeight="44dp"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signal Status:"
+                    android:id="@+id/SignalLabel"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:textSize="10pt"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SignalStatus"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="10pt"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/SignalProgressBar"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:minHeight="44dp"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/button1" android:text="Connect" android:onClick="doStuff"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_horizontal|bottom"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AppStatus"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+
+</LinearLayout>

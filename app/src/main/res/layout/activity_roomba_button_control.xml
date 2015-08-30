@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mind.king.roombacontroller.RoombaButtonControlActivity">
+
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Go Forward" />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnOn"
+        android:layout_alignParentRight="true"
+        android:text="Go Backward" />
+
+    <TextView
+        android:id="@+id/txtArduino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensorView0"
+        android:layout_centerHorizontal="true"
+        android:text="Sensor 1 Voltage = ????"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sensorView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:text="Sensor 0 Voltage = ????"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Roomba"
+        android:id="@+id/stopRoomba"
+        android:layout_below="@+id/btnOn"
+        android:layout_toRightOf="@+id/btnOn"
+        android:layout_toEndOf="@+id/btnOn" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpinLeft"
+        android:id="@+id/SpinLeftBtn"
+        android:layout_below="@+id/stopRoomba"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpinRight"
+        android:id="@+id/SpinRightBtn"
+        android:layout_below="@+id/stopRoomba"
+        android:layout_alignRight="@+id/btnOff"
+        android:layout_alignEnd="@+id/btnOff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode"
+        android:id="@+id/mode"
+        android:layout_below="@+id/txtArduino"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/start"
+        android:layout_alignBottom="@+id/mode"
+        android:layout_alignLeft="@+id/btnOff"
+        android:layout_alignStart="@+id/btnOff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dock"
+        android:id="@+id/dock"
+        android:layout_below="@+id/start"
+        android:layout_toLeftOf="@+id/start"
+        android:layout_toStartOf="@+id/start"
+        android:layout_marginTop="37dp" />
+
+</RelativeLayout>
